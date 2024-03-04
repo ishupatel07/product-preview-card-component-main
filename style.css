@@ -1,0 +1,132 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.box{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    background: #fff;
+    border-radius: 10px;
+   
+}
+
+img{
+    width: 300px;
+    height: 430px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.discription h3{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.discription h2{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.discription p{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 70px;
+    line-height: 25px;
+}
+
+.label{
+    margin-top: 15px;
+    margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.dis-price{
+    font-size: 40px;
+}
+.price{
+    padding-left: 20px;
+    text-decoration: line-through;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 10px 20px 10px 40px;
+    background-color: green;
+    font-weight: 800;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover{
+    background-color: rgb(32, 139, 32);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin-right: 20px;
+        padding: 0 20px; /* Add padding to the container for better spacing */
+    }
+
+    .box {
+        width: 100%; /* Make the box full width */ 
+        max-width: none; /* Remove the maximum width */
+        height: auto; /* Allow the height to adjust based on content */
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    img {
+        width: 100%; /* Make the image responsive */
+        height: 300px; /* Allow the height to adjust based on the width */
+        border-radius: 10px; /* Ensure border radius is applied */
+        border-top-left-radius: 10px; /* Reapply border radius for consistency */
+        border-bottom-left-radius: 0; /* Adjust border radius to maintain appearance */
+    }
+
+    .discription {
+        padding: 20px; /* Add padding to the description for better spacing */
+    }
+
+    .discription h3 {
+        margin-top: 10px; /* Adjust margin for better spacing */
+    }
+
+    .discription h2 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin for better spacing */
+    }
+
+    .discription p {
+        margin-top: 10px; /* Adjust margin for better spacing */
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+        line-height: 20px; /* Adjust line height for better readability */
+    }
+
+    .label {
+        margin-top: 10px; /* Adjust margin for better spacing */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .price {
+        padding-left: 20px; /* Add left padding to the price */
+    }
+
+    button {
+        width: 100%; /* Make the button full width */
+        max-width: none; /* Remove maximum width */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+}
